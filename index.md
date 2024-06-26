@@ -9,6 +9,8 @@ The developers behind Mr Figs and future works.
 
 ## Mr Figs
 
+<img src="/assets/capsule.png" alt="Mr Figs Capsule image" />
+
 Mr Figs is a top-down action/puzzle hybrid.
 Blast your way through over 50 levels of hair-pulling obstacles, enemies and
 bosses to expose the lab that made you, Mr Figs.
