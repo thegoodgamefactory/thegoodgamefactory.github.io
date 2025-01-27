@@ -1,33 +1,94 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-{% seo %}
-    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Mr Figs</title>
+        <link rel="icon" href="assets/images/favicon.png" type="image/png">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+            @font-face {
+                font-family: 'Pixellari';
+                src: url('assets/font/Pixellari.ttf') format('truetype');
+                font-weight: normal;
+                font-style: normal;
+            }
+            body {
+                font-family: 'Pixellari', sans-serif;
+            }
+        </style>
+    </head>
 
-        {% if site.logo %}
-          <img src="{{site.logo | relative_url}}" alt="Logo" />
-        {% endif %}
-      </header>
-      <section>
+    <body class="bg-gradient-to-b from-purple-900 to-black text-white">
 
-      {{ content }}
+        <section class="relative h-screen">
 
-      </section>
-      <footer>
-          <a href="https://store.steampowered.com/app/3122220/Mr_Figs/">Steam</a>
-          <a href="https://www.youtube.com/@mrfigsgame">YouTube</a>
-          <a href="https://discord.gg/KndkA3BGXv">Discord</a>
-          <a href="https://www.reddit.com/r/mrfigs/">Reddit</a>
-      </footer>
-    </div>
-  </body>
+            <div class="absolute inset-0 bg-cover bg-center blur-sm brightness-50"
+                style="background-image: url('assets/images/homepage.jpg');"
+            >
+
+            </div>
+            <div class="absolute inset-0 flex flex-col justify-center items-center text-center">
+                <h1 class="text-5xl md:text-8xl text-white font-bold pt-16">Mr Figs</h1>
+                <div class="flex space-x-6">
+                    <a 
+                        href="https://discord.com/invite/KndkA3BGXv" 
+                        class="text-xl text-pink-500 underline font-bold"
+                    >
+                        Discord
+                    </a>
+                    <a 
+                        href="https://store.steampowered.com/app/3122220/Mr_Figs/" 
+                        class="text-xl text-pink-500 underline font-bold"
+                    >
+                        Steam
+                    </a>
+                </div>
+                <div class="text-white pt-24 text-6xl font-bold">
+                    <p>COMING SOON</p>
+                </div>
+                <div class="mt-auto mb-10">
+                    <a 
+                        href="https://store.steampowered.com/app/3122220/Mr_Figs/" 
+                        class="bg-pink-500 text-white px-6 py-3 rounded-lg font-bold text-lg"
+                    >
+                        Wishlist on Steam today
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 px-4 text-center">
+            <h2 class="text-4xl font-semibold text-white mb-6">Discover your story</h2>
+            <div class="max-w-3xl mx-auto text-xl leading-relaxed text-gray-100 text-left space-y-6">
+                <p>
+                    You've escaped the lab but at what cost? 
+                    During your escape you have a sudden change of heart.
+                    You must collect the evidence and expose this place for what it is, bringing an end to it all.
+                </p>
+                <p>
+                    Mr figs is a topdown 2D action puzzler.
+                </p>
+                <ul>
+                    <li>- Bomb your way to the truth</li>
+                    <li>- Explore 100+ levels across 4 areas</li>
+                    <li>- Find every piece of evidence and expose your creator</li>
+                    <li>- Hidden rooms, challenge rooms and bosses!</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="py-16 px-4 text-center">
+            <div class="max-w-5xl mx-auto text-center">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <img src="assets/images/homepage.jpg" class="rounded-lg shadow-lg w-full object-left-top">
+                    <img src="assets/images/homepage.jpg" class="rounded-lg shadow-lg w-full object-left-top">
+                    <img src="assets/images/homepage.jpg" class="rounded-lg shadow-lg w-full object-left-top">
+                    <img src="assets/images/homepage.jpg" class="rounded-lg shadow-lg w-full object-left-top">
+                </div>
+            </div>
+        </section>
+        
+    </body>
 </html>
-
